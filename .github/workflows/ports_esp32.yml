@@ -35,12 +35,4 @@ jobs:
       run: source tools/ci.sh && ci_esp32_idf44_setup
     - name: Build
       run: source tools/ci.sh && ci_esp32_build
-    - name: Upload GitHub Pages artifact
-      uses: actions/upload-pages-artifact@v1.0.8
-      #with:
-      # Artifact name
-        #name:esp32bin
-      # Path of the directory containing the static assets.
-        #path: _site/
-      # Duration after which artifact will expire in days.
-        #retention-days: 2
+
